@@ -148,7 +148,7 @@ const Home: NextPage = ({ host, url, list }: any) => {
               <tbody>
                 {list.map((short: any) => (
                   <tr key={short._id}>
-                    <td className="p-5 border border-spacing-2 border-gray-500"><Link href={`http://${host}/${short.uid}`}><a>{host}/{short.uid}</a></Link></td>
+                    <td className="p-5 border border-spacing-2 border-gray-500"><Link href={`https://${host}/${short.uid}`}><a>{host}/{short.uid}</a></Link></td>
                     <td className="p-5 border border-spacing-2 border-gray-500">{short.url}</td>
                   </tr>
                 ))}
